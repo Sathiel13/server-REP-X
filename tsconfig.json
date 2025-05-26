@@ -7,12 +7,19 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "outDir": "./dist",
-    "typeRoots": ["./node_modules/@types", "./src"]
+    "typeRoots": ["./node_modules/@types", "./src"],
+
+    // 🚀 Estas dos líneas son clave:
+    "baseUrl": "./src",
+    "paths": {
+      "models/*": ["models/*"],
+      "utils/*": ["utils/*"],
+      "handlers/*": ["handlers/*"],
+      "middleware/*": ["middleware/*"],
+      "config/*": ["config/*"],
+      "assets-prueba/*": ["assets-prueba/*"]
+    }
   },
-  "include": [
-    "src/**/*.ts"
-  ],
-  "exclude": [
-    "node_modules"
-  ]
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules"]
 }
