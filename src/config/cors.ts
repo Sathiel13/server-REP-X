@@ -3,8 +3,9 @@ import dotenv from "dotenv";
 dotenv.config();
 const allowedOrigins = [
     'http://localhost:5000',
-    'https://rep-x-frontend-et1rnn6ox.vercel.app', // Deploy por build ID
-    'https://rep-x-frontend.vercel.app'            // Dominio principal asignado por Vercel
+    'https://rep-x-frontend.vercel.app',
+    'https://rep-x-fron-git-fe2b25-cristian-sathiel-ramirez-reveles-projects.vercel.app',
+    'https://rep-x-frontend-et1rnn6ox.vercel.app'
 ];
 
 
