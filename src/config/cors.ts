@@ -3,8 +3,10 @@ import dotenv from "dotenv";
 dotenv.config();
 const allowedOrigins = [
     'http://localhost:5000',
-    process.env.FRONTEND_URL
+    'https://rep-x-frontend-et1rnn6ox.vercel.app', // Deploy por build ID
+    'https://rep-x-frontend.vercel.app'            // Dominio principal asignado por Vercel
 ];
+
 
 const corsOptions = {
     origin: (origin: string | undefined, callback: (err: Error | null, allow?: boolean) => void) => {
